@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod 
 metadata:
   name: simplepod
-  Namespace: roboshop # If you dotn't specify a namespace, it will be created in the default namespace.
+  namespace: roboshop # If you dotn't specify a namespace, it will be created in the default namespace.
   spec:
     containers:
     - name: nginx-simple
