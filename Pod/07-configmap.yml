@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: courseconfig
+data: 
+  course: devops
+  duration: 3 months
+  trainer: siva
