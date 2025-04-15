@@ -1,14 +1,15 @@
 apiVersion: v1
 kind: Pod 
 metadata: 
-  name: multi-container
+  name: labels
 labels:
-  environment: production   
+  environment: production 
+  app: nginx 
 spec:
   containers:
   - name: nginx-labels
     image: nginx:latest
-    ports:
-  - name: sidecar
-    image: almalinux:8
-    command: ["sleep", "200"]
+    ports: 
+    - containerPort: 80
+    
+  
