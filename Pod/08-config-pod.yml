@@ -6,19 +6,19 @@ spec:
   containers:
   - name: config-pod
     image: nginx
-  env: 
-  - name: course
-    valueFrom:
+    env: 
+    - name: course
+      valueFrom:
         configMapKeyRef:
           name: courseconfig
           key: course
-  - name: person 
-    valueFrom:
-    configMapKeyRef:
-      name: courseconfig
-      key: trainer  
-  - name: duration 
-    valueFrom:
-    configMapKeyRef:
-      name: courseconfig
-      key: duration                  
+    - name: person 
+      valueFrom:
+        configMapKeyRef:
+          name: courseconfig
+          key: trainer  
+    - name: duration 
+      valueFrom:
+        configMapKeyRef:
+          name: courseconfig
+          key: duration
