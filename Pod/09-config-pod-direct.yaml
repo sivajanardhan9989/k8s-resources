@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: onfig-pod-direct
+  name: config-pod-direct
 spec:
 - containers:
 image: nginx 
