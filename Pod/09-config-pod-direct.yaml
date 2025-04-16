@@ -4,6 +4,8 @@ metadata:
   name: config-pod-direct
 spec:
 - containers:
-image: nginx 
-envFrom:
-- configMapKeyRef: courseconfig 
+- name: config-pod-direct
+  image: nginx 
+  envFrom:
+- configMapKeyRef:
+  name: courseconfig 
